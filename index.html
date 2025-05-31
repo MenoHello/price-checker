@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menopause Medications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe9e5;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; /* Allows stacking of .med-table elements */
+      align-items: center;
+    }
+    .med-table {
+      width: 75%;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      margin-bottom: 30px; /* Space between medication categories */
+    }
+    .category-header {
+      background-color: #ffa798;
+      color: #4a2d2d;
+      padding: 10px 10px;
+      font-size: 1.5em;
+      font-weight: 500;
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed; /* Ensures equal spacing for columns */
+    }
+    th {
+      background-color: #ffa798;
+      color: #000;
+      padding: 12px;
+      font-weight: 600;
+    }
+    /* Left-justify the "Medication (Brand)" header and allocate more width */
+    th:first-child {
+      text-align: left;
+      width: 40%; /* Adjusted to accommodate the new "Treatment" column */
+    }
+    /* Left-justify the "Treatment" header */
+    th:nth-child(2) {
+        text-align: left;
+        width: 20%; /* Allocate width for the treatment info */
+    }
+    /* Center align other headers (BuzzRx, GoodRx, Hippo, OptumPerks, SingleCare) */
+    th:not(:first-child):not(:nth-child(2)) {
+      text-align: center;
+      width: 10%; /* Distribute remaining width equally among other columns */
+    }
+    td {
+      padding: 14px;
+      text-align: center;
+      border-top: 1px solid #f0cfc9;
+      vertical-align: middle;
+    }
+    /* Left-justify the "Medication (Brand)" and "Treatment" data cells */
+    td:first-child, td:nth-child(2) {
+      text-align: left;
+      font-weight: 500;
+      color: #333;
+    }
+    tr:hover {
+      background-color: #ffe0e0;
+    }
+    .pill {
+      width: 50px;
+      height: 24px;
+      border-radius: 50px;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+      margin: 0 auto; /* Center the pill within its cell */
+    }
+    .pill:hover {
+      transform: scale(1.07);
+    }
+    .half {
+      width: 50%;
+      height: 100%;
+    }
+    /* Color classes for the pill halves */
+    .buzzrx-left { background-color: #fcbf49; }
+    .buzzrx-right { background-color: #000; }
+    .goodrx-left { background-color: #fdf589; }
+    .goodrx-right { background-color: #a4c2f4; }
+    .hippo-left { background-color: #48a868; }
+    .hippo-right { background-color: #d5f4ff; }
+    .optum-left { background-color: #f58220; }
+    .optum-right { background-color: #d3d3d3; }
+    .singlecare-left { background-color: #6236ff; }
+    .singlecare-right { background-color: #cfe9ff; }
+  </style>
+</head>
+<body>
+
+  <div class="med-table">
+    <div class="category-header">Estrogen patches</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th>Treatment</th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estradiol patch once-weekly (Climara)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/climara/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/climara" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/climara" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/climara" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/climara?q=Climara%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol patch twice-weekly (Dotti, Vivelle-Dot)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/dotti/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/estradiol?ppid=3&form=carton&dosage=8-twice-weekly-patches-of-0.075mg-day&quantity=1&label_override=estradiol" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/dotti" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/dotti" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/dotti?q=Dotti%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Combination estrogen / progestogen patches</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th>Treatment</th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estradiol / levonorgestrel (Climara Pro)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/climara-pro/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/climara-pro" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/climara-pro" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Climara Pro" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/climara-pro?q=Climara%20Pro" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol / norethindrone (Combipatch)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/combipatch/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/combipatch" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Combipatch" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Combipatch" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/combipatch?q=Combipatch" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Vaginal estrogen</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th>Treatment</th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estradiol vaginal cream (Estrace)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Estrace/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/estrace" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Estrace" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Estrace" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/estrace?q=Estrace%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Conjugated estrogens vaginal cream (Premarin cream)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Premarin/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/premarin-vaginal-cream" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Premarin" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Premarin" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/premarin?q=Premarin" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol vaginal tablets (Yuvafem, Vagifem)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Yuvafem/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/yuvafem" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/vagifem" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Yuvafem" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/vagifem?q=Vagifem%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol vaginal ring (Estring)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Estring/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/estring" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Estring" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Estring" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/estring?q=Estring" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol vaginal ring (Femring)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/Femring/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/femring" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Femring" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Femring" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/femring?q=Femring" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Oral combination pills</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th></th> <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estradiol / norethindrone (Mimvey, Loprezza, Activella)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Mimvey/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/mimvey" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Mimvey" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Mimvey" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/mimvey?q=Mimvey%20(Estradiol-Norethindrone%20Acet)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol / norethindrone (Fyavolv, Jinteli, Femhrt, Jevantique)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Fyavolv/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/jevantique" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Fyavolv" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Fyavolv" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/fyavolv?q=Fyavolv%20(Norethindrone-Eth%20Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol / progesterone (Bijuva)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Bijuva/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/bijuva" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Bijuva" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Bijuva" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/bijuva?q=Bijuva" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Conjugated estrogens / medroxyprogesterone (Prempro, Premphase)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Prempro/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/prempro" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Prempro" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Prempro" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/prempro?q=Prempro" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Conjugated estrogens / bazedoxifene (Duavee)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Duavee/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/duavee" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Duavee" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Duavee" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/duavee?q=Duavee" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Topical estrogen or testosterone gel or spray</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th>Treatment</th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estradiol gel single-use packets (Divigel)</td>
+          <td>Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/dotti/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/divigel" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Divigel" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Divigel" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/divigel?q=Divigel%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol spray (Evamist)</td>
+          <td>Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/dotti/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/evamist" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Evamist" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Evamist" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/evamist?q=Evamist" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Estradiol gel metered-dose pump (Estrogel)</td>
+          <td>Vaginal & Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/combipatch/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/estrogel" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Estrogel" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Estrogel" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/estrogel?q=Estrogel%20(Estradiol)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Testosterone gel metered-dose pump (Androgel, Axiron, Fortesta, Testim, Vogelxo)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/combipatch/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/testosterone" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Androgel" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Androgel" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/androgel-pump?q=Androgel%20Pump%20(Testosterone)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Oral progestogens</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th></th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Micronized natural progesterone / Prometrium</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/progesterone/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/progesterone?ppid=3&form=capsule&dosage=100mg&quantity=90&label_override=progesterone" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/progesterone" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Prometrium" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/progesterone?q=Progesterone%20(Prometrium)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Synthetic progestin / Medroxyprogesterone (Provera)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Provera/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/provera" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Provera" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Provera" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/provera?q=Provera%20(medroxyPROGESTERone%20Acetate)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Nonhormonal menopause medications</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th>Treatment</th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prasterone Vaginal DHEA derivative insert (Intrarosa)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Intrarosa/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/intrarosa" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Intrarosa" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Intrarosa" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/intrarosa?q=Intrarosa" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Ospemifene Oral SERM (Osphena)</td>
+          <td>Vaginal</td>
+          <td>
+            <a href="https://www.buzzrx.com/Osphena/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/osphena" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Osphena" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Osphena" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/osphena?q=Osphena" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Pareoxetine Oral SSRI Paroxetine Mesylate (Brisdelle)</td>
+          <td>Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/Brisdelle/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/brisdelle" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Brisdelle" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/paroxetine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/paroxetine-mesylate?q=Paroxetine%20Mesylate" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Fezolinetant Oral NK3 antagonist (Veozah)</td>
+          <td>Vasomotor</td>
+          <td>
+            <a href="https://www.buzzrx.com/Veozah/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/veozah" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/veozah" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Veozah" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/veozah?q=Veozah" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="med-table">
+    <div class="category-header">Medications sometimes prescribed off-label to manage vasomotor symptoms</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Medication (Generic/Brand)</th>
+          <th></th>
+          <th>BuzzRx</th>
+          <th>GoodRx</th>
+          <th>Hippo</th>
+          <th>Optum Perks</th>
+          <th>SingleCare</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gabapentin (Gralise, Neurontin)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Gabapentin/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/gabapentin" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Gabapentin" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Gabapentin" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/gabapentin?q=Gabapentin%20(Neurontin)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Venlafaxine (Effexor)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Venlafaxine/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/venlafaxine" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Venlafaxine" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Venlafaxine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/venlafaxine-hcl-er?q=Venlafaxine%20Hcl%20Er%20(Effexor%20XR)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Clonidine (Catapres, Catapres-Tts)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Clonidine/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/clonidine" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Clonidine" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Clonidine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/clonidine?q=Clonidine%20(Catapres-TTS-2)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Escitalopram (Lexapro)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Escitalopram/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/lexapro" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Escitalopram" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Escitalopram" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/escitalopram-oxalate?q=Escitalopram%20Oxalate%20(Lexapro)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Fluoxetine (Prozac)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Fluoxetine/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/fluoxetine" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Fluoxetine" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Fluoxetine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/fluoxetine-hcl?q=Fluoxetine%20Hcl%20(PROzac)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Amitriptyline (Amitid, Amitril, and Elavil, Endep)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Amitriptyline/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/amitriptyline" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Amitriptyline" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Amitriptyline" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/amitriptyline-hcl?q=Amitriptyline%20Hcl" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Bupropion (Wellbutrin)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Bupropion/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/bupropion" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Bupropion" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Bupropion" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/bupropion-hcl-er-xl?q=Bupropion%20Hcl%20Er%20(Xl)%20(Wellbutrin%20XL)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Desvenlafaxine (Khedezla)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Desvenlafaxine/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/desvenlafaxine-er" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Desvenlafaxine" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Desvenlafaxine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/desvenlafaxine-succinate-er?q=Desvenlafaxine%20Succinate%20Er%20(Pristiq)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Duloxetine (Cymbalta)</td>
+          <td></td>
+          <td>
+            <a href="https://www.buzzrx.com/Duloxetine/coupon" target="_blank" class="pill">
+              <span class="half buzzrx-left"></span><span class="half buzzrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.goodrx.com/duloxetine" target="_blank" class="pill">
+              <span class="half goodrx-left"></span><span class="half goodrx-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://hellohippo.com/Duloxetine" target="_blank" class="pill">
+              <span class="half hippo-left"></span><span class="half hippo-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://perks.optum.com/drug/Duloxetine" target="_blank" class="pill">
+              <span class="half optum-left"></span><span class="half optum-right"></span>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.singlecare.com/prescription/duloxetine-hcl?q=Duloxetine%20Hcl%20(Cymbalta)" target="_blank" class="pill">
+              <span class="half singlecare-left"></span><span class="half singlecare-right"></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
